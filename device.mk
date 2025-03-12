@@ -21,6 +21,12 @@ TARGET_SCREEN_WIDTH := 720
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
 
+# Quick Tap
+PRODUCT_COPY_FILES += \
+    device/oneplus/guacamoleb/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
+    persist.columbus.use_ap_sensor=false
+
 PRODUCT_PACKAGES += \
    android.hardware.sensors@1.0-service
 
