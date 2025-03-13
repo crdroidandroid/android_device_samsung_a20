@@ -23,7 +23,7 @@ PRODUCT_COPY_FILES += \
 
 # Quick Tap
 PRODUCT_COPY_FILES += \
-    device/oneplus/guacamoleb/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+    device/samsung/a20/conf/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     persist.columbus.use_ap_sensor=false
 
